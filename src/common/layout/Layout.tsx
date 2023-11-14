@@ -1,8 +1,8 @@
 import { FC, PropsWithChildren, ReactNode } from 'react'
 
 interface Props extends PropsWithChildren {
-   header: ReactNode;
-   footer: ReactNode;
+   header: ReactNode
+   footer: ReactNode
 }
 
 export const Layout: FC<Props> = ({ header, children, footer }) => {

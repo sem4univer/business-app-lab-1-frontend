@@ -52,7 +52,7 @@ export const airports: Airport[] = [
       id: 302,
       countryId: 401,
       IATACode: 'KFJ',
-      name: 'John F. Kennedy International Airport',
+      name: 'Other Airport',
    },
 ]
 
