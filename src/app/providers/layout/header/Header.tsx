@@ -1,5 +1,5 @@
 import { FC } from 'react'
 
 export const Header: FC = () => {
-   return <header>header</header>
+   return <div>header</div>
 }

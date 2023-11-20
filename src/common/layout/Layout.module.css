@@ -1,0 +1,8 @@
+.header {
+    height: var(--page-header-height);
+}
+
+.main {
+    background: #f4f4f4;
+    height: calc(100vh - var(--page-header-height));
+}
