@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { Auf } from '../../../pages/auf/Auf'
 import { MainFlights } from '../../../pages/mainFlights/MainFlights'
 import { Profile } from '../../../pages/profile/Header'
 
@@ -9,6 +10,10 @@ const getRouter = (layout: ReactNode) =>
          path: '/',
          element: layout,
          children: [
+            {
+               path: 'auth',
+               element: <Auf />,
+            },
             {
                path: '/',
                element: <MainFlights />,
