@@ -1,8 +1,10 @@
-import { configureStore } from '@reduxjs/toolkit'
-import { scheduleReducer } from './slices/schedule'
-import { routeReducer } from './slices/route'
-import { airportReducer } from './slices/airport'
+import { configureStore, getDefaultMiddleware } from '@reduxjs/toolkit'
+import { TypedUseSelectorHook, useDispatch, useSelector } from 'react-redux'
 import { aircraftReducer } from './slices/aircraft'
+import { airportReducer } from './slices/airport'
+import { routeReducer } from './slices/route'
+import { scheduleReducer } from './slices/schedule'
+import { userReducer } from './slices/user'
 
 const store = configureStore({
    reducer: {
@@ -10,10 +12,17 @@ const store = configureStore({
       route: routeReducer,
       airport: airportReducer,
       aircraft: aircraftReducer,
+      user: userReducer,
    },
+   // to disable console serialize error
+   middleware: getDefaultMiddleware({
+      serializableCheck: false,
+   }),
 })
 
 export type RootState = ReturnType<typeof store.getState>
 export type AppDispatch = typeof store.dispatch
+export const useAppDispatch: () => AppDispatch = useDispatch
+export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 
 export default store

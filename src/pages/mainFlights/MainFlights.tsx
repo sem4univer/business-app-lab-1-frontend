@@ -1,7 +1,8 @@
 import { FC } from 'react'
-import { useAppSelector } from '../../app/utils/hooks'
+
 import { ScheduleFilters } from '../../components/ScheduleFilters'
 import { ScheduleTable } from '../../components/ScheduleTable'
+import { useAppSelector } from '../../store'
 
 export const MainFlights: FC = () => {
    const { schedules } = useAppSelector((state) => state.schedule)

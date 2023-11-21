@@ -3,7 +3,7 @@ import { ColumnsType } from 'antd/es/table'
 import { format } from 'date-fns'
 import { FC, useMemo } from 'react'
 import { Schedule } from '../app/types/schedule'
-import { useAppSelector } from '../app/utils/hooks'
+import { useAppSelector } from '../store'
 
 interface DataType {
    key: React.Key

@@ -1,6 +1,7 @@
 import { Button, DatePicker, Select } from 'antd'
 import { FC } from 'react'
-import { useAppSelector } from '../app/utils/hooks'
+
+import { useAppSelector } from '../store'
 import css from './ScheduleFilters.module.scss'
 
 const sortOptions = [
