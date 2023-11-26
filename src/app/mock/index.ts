@@ -16,7 +16,7 @@ export const schedules: Schedule[] = [
       routeId: 201,
       flightNumber: 1234,
       economyPrice: 500,
-      confirmed: true,
+      confirmed: false,
    },
 ]
 
