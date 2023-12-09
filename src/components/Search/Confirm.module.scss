@@ -1,0 +1,14 @@
+.confirm {
+   height: 100px;
+   border: 2px solid rgb(113, 113, 255);
+   padding: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.passengers {
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}

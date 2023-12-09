@@ -1,0 +1,15 @@
+.block {
+   display: flex;
+   align-items: center;
+   gap: 4px;
+
+   > p {
+      font-weight: bold;
+   }
+}
+
+.details {
+   display: flex;
+   justify-content: space-between;
+   padding: 6px 12px;
+}

@@ -20,7 +20,6 @@ const scheduleSlice = createSlice({
          if (schedule) {
             schedule.date = new Date(date)
             schedule.time = new Date(time)
-            console.log(new Date(date), new Date(time))
             schedule.economyPrice = economyPrice
          }
       },

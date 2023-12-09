@@ -1,0 +1,9 @@
+.title {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.selected {
+   background-color: rgba(0, 0, 255, 0.5);
+}

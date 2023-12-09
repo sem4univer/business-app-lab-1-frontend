@@ -66,7 +66,7 @@ export const ScheduleTable: FC<Props> = ({
    const { aircrafts } = useAppSelector((state) => state.aircraft)
    const dispatch = useAppDispatch()
 
-   let schedules: DataType[] = data.map((schedule) => {
+   const schedules: DataType[] = data.map((schedule) => {
       const businessPrice = Math.round(schedule.economyPrice * 1.35)
       const firstClassPrice = Math.round(businessPrice * 1.3)
 

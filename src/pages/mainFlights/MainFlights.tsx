@@ -34,7 +34,7 @@ export const MainFlights: FC = () => {
       }
       if (filters.to) {
          return (
-            getAirportCode(routes, schedule.routeId, airports) ==
+            getAirportCode(routes, schedule.routeId, airports) ===
             getAirportByName(airports, filters.to)
          )
       }

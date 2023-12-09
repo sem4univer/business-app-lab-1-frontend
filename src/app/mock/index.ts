@@ -10,11 +10,21 @@ import {
 export const schedules: Schedule[] = [
    {
       id: 1,
-      date: new Date('2023-04-11'),
-      time: new Date('2023-04-11T10:00:00'),
+      date: new Date('2023-02-12'),
+      time: new Date('2023-02-12T10:00:00'),
       aircraftId: 101,
       routeId: 201,
       flightNumber: 1234,
+      economyPrice: 500,
+      confirmed: false,
+   },
+   {
+      id: 2,
+      date: new Date('2023-02-13'),
+      time: new Date('2023-02-13T10:00:00'),
+      aircraftId: 101,
+      routeId: 202,
+      flightNumber: 1235,
       economyPrice: 500,
       confirmed: false,
    },
@@ -37,7 +47,14 @@ export const routes: Route[] = [
       departureAirportId: 301,
       arrivalAirportId: 302,
       distance: 1000,
-      flightTime: new Date('2023-04-11T200:00:00'),
+      flightTime: new Date('2023-02-12T10:00:00'),
+   },
+   {
+      id: 202,
+      departureAirportId: 302,
+      arrivalAirportId: 301,
+      distance: 1000,
+      flightTime: new Date('2023-02-13T10:00:00'),
    },
 ]
 
